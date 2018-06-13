@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-MAINTAINER Joe Bell
+LABEL maintainer="Joe Bell<joe.bell.1329@gmail.com>"
 
 RUN apk update
 
@@ -23,4 +23,4 @@ RUN pip install awscli
 RUN apk --purge -v del py-pip
 RUN rm /var/cache/apk/*
 
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]
