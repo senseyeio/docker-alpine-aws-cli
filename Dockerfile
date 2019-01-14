@@ -14,6 +14,12 @@ RUN apk add make && apk add curl && apk add openssh
 # Install git
 RUN apk add git
 
+# Install nodejs
+RUN apk add nodejs
+
+# Install yarn
+RUN apk add yarn
+
 # Set timezone to UTC by default
 RUN ln -sf /usr/share/zoneinfo/Etc/UTC /etc/localtime
 
